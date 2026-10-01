@@ -63,3 +63,64 @@ body{color:var(--text)}
 #globalSearchResults .client-global-photo-card img,.photo-card img,.album-cover{transform:translateZ(0)}
 @media (max-width:420px){.topbar-title{padding-left:36px;background-size:26px 26px}.album-card,.photo-card,.client-global-photo-card{border-radius:8px}}
 
+
+
+/* 2026-10-01 ФотоПоиск light + brighter green redesign */
+:root{--ps-bg:#f4f6f7;--ps-bg-soft:#fafbfb;--ps-surface:#ffffff;--ps-surface-2:#f6f8f8;--ps-line:#dfe6e3;--ps-line-green:#bcead8;--ps-text:#17201d;--ps-muted:#66736e;--ps-muted-2:#89958f;--ps-green:#18d89a;--ps-green-2:#35e6ad;--ps-green-deep:#0aa979;--ps-green-soft:#e9fbf4;--ps-danger:#dc5c5c;--ps-danger-soft:#fff0f0}
+html,body,#app{background:var(--ps-bg)!important;color:var(--ps-text)!important;background-image:none!important}
+body{color:var(--ps-text)!important}
+#app{min-height:100vh}
+.topbar{background:linear-gradient(135deg,#3ee8b0 0%,#19d79a 48%,#08b77f 100%)!important;box-shadow:0 2px 10px rgba(24,216,154,.18)!important}
+.topbar-title{color:#ffffff!important;text-shadow:none!important}
+.topbar-user{color:rgba(255,255,255,.94)!important}
+.topbar-sort-button{background:rgba(255,255,255,.14)!important;border-color:rgba(255,255,255,.55)!important;color:#fff!important}
+.topbar-sort-button.active{background:#ffffff!important;color:#09996c!important;border-color:#ffffff!important}
+.topbar-button:hover{background:rgba(255,255,255,.16)!important}.topbar-button:active{background:rgba(255,255,255,.24)!important}
+.search-container,.client-global-search-controls{background:rgba(244,246,247,.96)!important;background-image:none!important}
+.search-box,.photo-search-box{background:#ffffff!important;border:1px solid var(--ps-line)!important;box-shadow:none!important}
+.search-box:focus-within{border-color:var(--ps-green)!important;background:#fff!important;box-shadow:0 0 0 3px rgba(24,216,154,.12)!important}
+.search-icon{color:#14b984!important;opacity:1!important}
+#albumSearch,#photoSearch,#globalPhotoSearch,.form-input,.form-textarea,.comment-reply-input,.photo-viewer-comment-input{color:var(--ps-text)!important}
+#albumSearch::placeholder,#photoSearch::placeholder,#globalPhotoSearch::placeholder,.form-input::placeholder,.form-textarea::placeholder,.comment-reply-input::placeholder,.photo-viewer-comment-input::placeholder{color:#9aa49f!important}
+.clear-search{background:#e8f8f2!important;color:#11a978!important}.clear-search:hover{background:#d8f4e9!important}
+.albums-grid,.photos-grid,.client-home-photo-results,.client-global-search-results{background:transparent!important}
+.album-card,.photo-card,.client-global-photo-card{background:#ffffff!important;border:1px solid #e3e9e6!important;box-shadow:none!important}
+.album-card::after{background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.08) 52%,rgba(0,0,0,.62) 100%)!important}
+.album-placeholder,.comment-photo-placeholder{background:linear-gradient(145deg,#82f2ca,#1bc995)!important;color:#fff!important}
+.album-header,.comments-toolbar,.photo-viewer-description,.photo-viewer-stats{background:#ffffff!important;border-bottom:1px solid var(--ps-line)!important}
+.album-header h1,.comments-title,.comment-author,.photo-viewer-section-title{color:var(--ps-text)!important}
+.photo-count,.album-description,.comment-date,.client-global-search-status,.legal-footer,.upload-photo-album-name,.upload-photo-selection,.upload-photo-progress,.photo-delete-text,.client-global-search-empty,.status-message{color:var(--ps-muted)!important}
+.comment-card,.comment-reply-box,.photo-viewer-comment,.comment-card-rich{background:#ffffff!important;border-color:var(--ps-line)!important;box-shadow:none!important}
+.comment-card-rich.comment-thread-reply,.photo-viewer-comment-reply{background:#f3fcf8!important;border-left-color:#43dba9!important}
+.comment-card-rich.comment-unanswered,.photo-viewer-comment-unanswered{background:#fffaf0!important;box-shadow:inset 3px 0 0 #e6ad52!important}
+.comment-author-link,.comment-inline-link,.comment-reply-link,.comment-reply-target-link,.photo-viewer-reply-author,.comment-album{color:#0aae79!important}
+.modal,.main-menu,.context-menu-sheet,.photo-delete-sheet{background:#ffffff!important;color:var(--ps-text)!important;border-color:var(--ps-line)!important;box-shadow:0 14px 40px rgba(30,48,41,.16)!important}
+.menu-item,.context-menu-button{color:var(--ps-text)!important}
+.menu-item:hover,.menu-item:active,.context-menu-button:hover{background:#f0faf6!important}
+.context-menu-button{background:#fff!important;border-bottom-color:var(--ps-line)!important}
+.context-menu-button-cancel{color:#0aae79!important}
+.form-label,.form-checkbox-row{color:#34423d!important}.form-checkbox-hint{color:#7c8984!important}
+.form-input,.form-textarea,.comment-reply-input,.photo-viewer-comment-input{background:#ffffff!important;border-color:#d8e2de!important}
+.form-input:focus,.form-textarea:focus,.comment-reply-input:focus,.photo-viewer-comment-input:focus{border-color:var(--ps-green)!important;box-shadow:0 0 0 3px rgba(24,216,154,.11)!important}
+.form-checkbox-row input[type="checkbox"]{accent-color:var(--ps-green)!important}
+.primary-button{background:linear-gradient(135deg,#39e7ae 0%,#18d89a 55%,#08b77f 100%)!important;color:#fff!important;box-shadow:none!important}
+.primary-button:hover{background:linear-gradient(135deg,#50ecba 0%,#21dfa2 55%,#0bc287 100%)!important}
+.primary-button:active{background:#09b47d!important}
+.secondary-button,.photo-delete-cancel{background:#edf2f0!important;color:#26332e!important}
+.secondary-button:hover,.photo-delete-cancel:active:not(:disabled){background:#e2e9e6!important}
+.form-error,.photo-delete-error,.error{background:var(--ps-danger-soft)!important;color:#c34848!important;border-color:#ffd4d4!important}
+.photo-viewer-media,.photo-viewer-image{background:#111716!important}
+.photo-viewer-nav{background:rgba(17,23,22,.58)!important;border-color:rgba(255,255,255,.2)!important}
+.photo-viewer-composer{background:#ffffff!important;border-top:1px solid var(--ps-line)!important;backdrop-filter:none!important}
+.photo-viewer-reply-target{color:var(--ps-muted)!important}.photo-viewer-reply-cancel{background:#eaf0ed!important;color:#33423d!important}
+.photo-card-date,.photo-card-stat,.client-global-photo-date,.client-global-photo-album{background:rgba(13,32,25,.74)!important;border:none!important;color:#fff!important}
+.client-photo-freshness{background:#ecfbf5!important;color:#19805f!important}
+.album-context-menu{background:#ffffff!important;box-shadow:0 14px 34px rgba(30,48,41,.16)!important}
+.album-context-item{color:#24312c!important}.album-context-item:hover{background:#eefaf5!important}.album-context-item.selected{background:#def8ed!important}.album-context-item.danger{color:#24312c!important}
+.client-download-title{color:#24312c!important}.client-download-status{color:#66736e!important}
+.upload-photo-progress{background:#f1f7f4!important;color:#466057!important}
+.legal-footer a{color:#0aae79!important}
+.photo-delete-overlay,.modal-overlay,.context-menu-overlay{background:rgba(20,30,26,.32)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.menu-item.menu-item-danger,.context-menu-button-danger{color:#d65b5b!important}
+@media (max-width:420px){.search-container{padding-top:8px!important}.album-card,.photo-card,.client-global-photo-card{border-radius:9px!important}}
+
