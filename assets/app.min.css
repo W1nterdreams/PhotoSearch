@@ -124,3 +124,13 @@ body{color:var(--ps-text)!important}
 .menu-item.menu-item-danger,.context-menu-button-danger{color:#d65b5b!important}
 @media (max-width:420px){.search-container{padding-top:8px!important}.album-card,.photo-card,.client-global-photo-card{border-radius:9px!important}}
 
+
+
+/* 2026-10-01 readability fix: black text on all light surfaces */
+body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.photo-viewer-stats,.comment-card,.comment-reply-box,.photo-viewer-comment,.comment-card-rich,.modal,.main-menu,.context-menu-sheet,.photo-delete-sheet,.photo-viewer-composer{color:#111111!important}
+.album-header h1,.photo-count,.album-description,.comments-title,.comment-author,.comment-text,.comment-date,.photo-viewer-description,.photo-viewer-stat,.photo-viewer-section-title,.photo-viewer-comment,.photo-viewer-comment .comment-date,.photo-viewer-reply-target,.client-global-search-status,.status-message,.client-global-search-empty,.upload-photo-album-name,.upload-photo-selection,.upload-photo-progress,.photo-delete-text,.form-label,.form-checkbox-row,.form-checkbox-hint,.client-download-title,.client-download-status{color:#111111!important}
+#albumSearch,#photoSearch,#globalPhotoSearch,.form-input,.form-textarea,.comment-reply-input,.photo-viewer-comment-input{color:#111111!important}
+.menu-item,.context-menu-button,.album-context-item{color:#111111!important}
+.legal-footer{color:#111111!important}
+/* keep text that sits directly over dark/green backgrounds white */
+.topbar,.topbar-title,.topbar-user,.topbar-button,.topbar-sort-button:not(.active),.primary-button,.album-name,.album-count,.photo-card-date,.photo-card-stat,.client-global-photo-date,.client-global-photo-album,.photo-viewer-nav{color:#ffffff!important}
