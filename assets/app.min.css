@@ -214,3 +214,6 @@ body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.pho
   .topbar-brand-thumb-wrap{width:32px;height:32px}
   .topbar-brand-name{font-size:14px}
 }
+
+/* 2026-10-11: shorter header brand card + hide username */
+.topbar-brand-card{flex:0 1 340px!important;max-width:340px!important}.topbar-user{display:none!important}.topbar-community-link{margin-left:0!important}@media(max-width:700px){.topbar-brand-card{flex-basis:290px!important;max-width:290px!important}}@media(max-width:560px){.topbar-brand-card{flex-basis:250px!important;max-width:250px!important}}@media(max-width:390px){.topbar-brand-card{flex-basis:215px!important;max-width:215px!important}}
