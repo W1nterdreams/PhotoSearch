@@ -181,3 +181,36 @@ body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.pho
 .topbar-community-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#2787f5;color:#fff!important;font-size:9px;font-weight:800;letter-spacing:-.2px}
 .topbar-community-text{font-size:12px;font-weight:700;line-height:1;white-space:nowrap}
 @media (max-width: 520px){.topbar-community-link{padding:0 7px;margin-right:4px}.topbar-community-text{display:none}}
+
+/* 2026-10-11: brand card moved into top bar */
+.topbar{gap:6px!important;padding-left:6px!important;padding-right:6px!important}
+.topbar-brand-card{display:flex;align-items:center;gap:8px;flex:1 1 auto;min-width:0;max-width:520px;height:48px;padding:5px 9px;border:1px solid rgba(255,255,255,.7);border-radius:12px;background:rgba(255,255,255,.96);box-shadow:0 1px 3px rgba(30,48,41,.10);color:#22312f!important}
+.topbar-brand-thumb-wrap{flex:0 0 auto;width:38px;height:38px;border-radius:9px;overflow:hidden;background:#eef3f1;border:1px solid #e0e6e3}
+.topbar-brand-thumb{display:block;width:100%;height:100%;object-fit:cover}
+.topbar-brand-copy{display:flex;flex-direction:column;justify-content:center;min-width:0;line-height:1.05}
+.topbar-brand-eyebrow{margin-bottom:1px;color:#7a8885!important;font-size:8px;font-weight:700;letter-spacing:.045em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar-brand-name{color:#22312f!important;font-size:16px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar-brand-subtitle{margin-top:2px;color:#5f6d69!important;font-size:10px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar-community-link{order:30;margin-left:auto!important;margin-right:0!important}
+#refreshButton{order:40}
+.topbar-user{order:20}
+.topbar-brand-card{order:10}
+.topbar-title{order:10}
+.topbar-sort-controls{order:10}
+#backButton{order:0}
+.mania-brand{display:none!important}
+@media(max-width:560px){
+  .topbar{gap:4px!important}
+  .topbar-brand-card{height:46px;padding:4px 7px;gap:7px;border-radius:11px}
+  .topbar-brand-thumb-wrap{width:36px;height:36px;border-radius:8px}
+  .topbar-brand-eyebrow{display:none}
+  .topbar-brand-name{font-size:15px}
+  .topbar-brand-subtitle{font-size:9px}
+  .topbar-community-link{height:30px!important;padding:0 6px!important}
+}
+@media(max-width:390px){
+  .topbar-brand-subtitle{display:none}
+  .topbar-brand-card{height:42px}
+  .topbar-brand-thumb-wrap{width:32px;height:32px}
+  .topbar-brand-name{font-size:14px}
+}
