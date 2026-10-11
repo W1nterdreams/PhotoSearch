@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>ФотоПоиск</title>
-    <meta name="theme-color" content="#20c997">
+    <meta name="theme-color" content="#6f9790">
     <link rel="icon" type="image/png" href="./assets/app-icon-green.png">
     <link rel="apple-touch-icon" href="./assets/app-icon-green.png">
-    <link rel="stylesheet" href="./assets/app.min.css?v=20261011-brand">
+    <link rel="stylesheet" href="./assets/app.min.css?v=20261011-brandfix2">
 </head>
 <body>
 <div id="app">
@@ -28,14 +28,22 @@
 
     <main id="albumsScreen" class="screen">
         <section class="mania-brand" aria-label="Мания пряжи">
-            <a class="mania-brand-logo-link" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Открыть сообщество Мания пряжи ВКонтакте">
-                <img class="mania-brand-logo" src="./assets/mania-yarn-logo.png" alt="Мания пряжи — Пряжа СТОК из Италии">
+            <a class="mania-brand-card" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Открыть сообщество Мания пряжи ВКонтакте">
+                <div class="mania-brand-thumb-wrap" aria-hidden="true">
+                    <img class="mania-brand-thumb" src="./assets/app-icon-green.png" alt="">
+                </div>
+                <div class="mania-brand-copy">
+                    <div class="mania-brand-eyebrow">Сообщество ВКонтакте</div>
+                    <div class="mania-brand-name">Мания пряжи</div>
+                    <div class="mania-brand-subtitle">Пряжа СТОК из Италии</div>
+                </div>
+                <div class="mania-brand-open" aria-hidden="true">Открыть ↗</div>
             </a>
-            <a class="mania-community-link" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer">
+            <a class="mania-community-link" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Перейти в сообщество Мания пряжи">
                 <span class="mania-community-dot" aria-hidden="true">VK</span>
-                <span>Сообщество ВКонтакте</span>
-                <span class="mania-community-address">vk.ru/stockyarn</span>
-                <span class="mania-community-arrow" aria-hidden="true">↗</span>
+                <span class="mania-community-label">vk.ru/stockyarn</span>
+                <span class="mania-community-sep" aria-hidden="true">·</span>
+                <span class="mania-community-hint">сообщество магазина</span>
             </a>
         </section>
 
@@ -106,6 +114,6 @@
     </footer>
 </div>
 
-<script defer src="./assets/app.min.js?v=20261011-brand"></script>
+<script defer src="./assets/app.min.js?v=20261011-brandfix2"></script>
 </body>
 </html>
