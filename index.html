@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#6f9790">
     <link rel="icon" type="image/png" href="./assets/app-icon-green.png">
     <link rel="apple-touch-icon" href="./assets/app-icon-green.png">
-    <link rel="stylesheet" href="./assets/app.min.css?v=20261011-brandfix3">
+    <link rel="stylesheet" href="./assets/app.min.css?v=20261011-brandfix4">
 </head>
 <body>
 <div id="app">
@@ -16,10 +16,16 @@
 
         <div id="pageTitle" class="topbar-title">ФотоПоиск</div>
 
-        <a id="topbarCommunityLink" class="topbar-community-link hidden" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Открыть сообщество Мания пряжи ВКонтакте">
-            <span class="topbar-community-badge" aria-hidden="true">VK</span>
-            <span class="topbar-community-text">Сообщество</span>
-        </a>
+        <div id="topbarBrand" class="topbar-brand-card hidden" aria-label="Мания пряжи">
+            <div class="topbar-brand-thumb-wrap" aria-hidden="true">
+                <img class="topbar-brand-thumb" src="./assets/app-icon-green.png" alt="">
+            </div>
+            <div class="topbar-brand-copy">
+                <div class="topbar-brand-eyebrow">Сообщество ВКонтакте</div>
+                <div class="topbar-brand-name">Мания пряжи</div>
+                <div class="topbar-brand-subtitle">Пряжа СТОК из Италии</div>
+            </div>
+        </div>
 
         <div id="albumSortControls" class="topbar-sort-controls hidden" aria-label="Сортировка фотографий">
             <button id="sortNewestButton" class="topbar-sort-button" type="button">Новые</button>
@@ -28,23 +34,14 @@
         </div>
 
         <div id="user" class="topbar-user">Загрузка...</div>
+        <a id="topbarCommunityLink" class="topbar-community-link hidden" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Открыть сообщество Мания пряжи ВКонтакте">
+            <span class="topbar-community-badge" aria-hidden="true">VK</span>
+            <span class="topbar-community-text">Сообщество</span>
+        </a>
         <button id="refreshButton" class="topbar-button" type="button" title="Обновить">↻</button>
     </header>
 
     <main id="albumsScreen" class="screen">
-        <section class="mania-brand" aria-label="Мания пряжи">
-            <a class="mania-brand-card" href="https://vk.ru/stockyarn" target="_blank" rel="noopener noreferrer" aria-label="Открыть сообщество Мания пряжи ВКонтакте">
-                <div class="mania-brand-thumb-wrap" aria-hidden="true">
-                    <img class="mania-brand-thumb" src="./assets/app-icon-green.png" alt="">
-                </div>
-                <div class="mania-brand-copy">
-                    <div class="mania-brand-eyebrow">Сообщество ВКонтакте</div>
-                    <div class="mania-brand-name">Мания пряжи</div>
-                    <div class="mania-brand-subtitle">Пряжа СТОК из Италии</div>
-                </div>
-                <div class="mania-brand-open" aria-hidden="true">Открыть ↗</div>
-            </a>
-        </section>
 
         <div class="search-container client-dual-search">
             <div class="search-box">
@@ -113,6 +110,6 @@
     </footer>
 </div>
 
-<script defer src="./assets/app.min.js?v=20261011-brandfix3"></script>
+<script defer src="./assets/app.min.js?v=20261011-brandfix4"></script>
 </body>
 </html>
