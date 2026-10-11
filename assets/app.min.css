@@ -171,3 +171,13 @@ body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.pho
   .mania-community-hint{display:none}
   .mania-community-sep{display:none}
 }
+
+/* 2026-10-11 main screen header/link refinement */
+.mania-brand{padding:4px 8px 6px!important;gap:6px!important}
+.mania-brand-card{margin-top:0!important}
+.topbar-community-link,.topbar-community-link:visited{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;height:32px;margin-right:6px;padding:0 10px;border:1px solid rgba(255,255,255,.34);border-radius:999px;background:rgba(255,255,255,.14);color:#ffffff!important;text-decoration:none!important;-webkit-tap-highlight-color:transparent}
+.topbar-community-link:hover{background:rgba(255,255,255,.18)!important}
+.topbar-community-link:active{background:rgba(255,255,255,.24)!important;transform:scale(.98)}
+.topbar-community-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#2787f5;color:#fff!important;font-size:9px;font-weight:800;letter-spacing:-.2px}
+.topbar-community-text{font-size:12px;font-weight:700;line-height:1;white-space:nowrap}
+@media (max-width: 520px){.topbar-community-link{padding:0 7px;margin-right:4px}.topbar-community-text{display:none}}
