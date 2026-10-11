@@ -217,3 +217,17 @@ body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.pho
 
 /* 2026-10-11: shorter header brand card + hide username */
 .topbar-brand-card{flex:0 1 340px!important;max-width:340px!important}.topbar-user{display:none!important}.topbar-community-link{margin-left:0!important}@media(max-width:700px){.topbar-brand-card{flex-basis:290px!important;max-width:290px!important}}@media(max-width:560px){.topbar-brand-card{flex-basis:250px!important;max-width:250px!important}}@media(max-width:390px){.topbar-brand-card{flex-basis:215px!important;max-width:215px!important}}
+
+/* 2026-10-11: move VK link into white brand card */
+.topbar-community-link{display:none!important}
+.topbar-brand-card{justify-content:flex-start!important;gap:10px!important}
+.topbar-brand-copy{flex:1 1 auto!important}
+.topbar-brand-eyebrow{display:none!important}
+.topbar-brand-community-link,.topbar-brand-community-link:visited{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:44px;height:36px;margin-left:auto;border:1px solid #d7e1de;border-radius:18px;background:#edf4f2;text-decoration:none!important;-webkit-tap-highlight-color:transparent}
+.topbar-brand-community-link:hover{background:#e8f0ed!important}
+.topbar-brand-community-link:active{background:#e1ece8!important;transform:scale(.98)}
+.topbar-brand-community-badge{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;padding:0 7px;border-radius:999px;background:#2787f5;color:#fff!important;font-size:11px;font-weight:800;letter-spacing:-.2px;line-height:1}
+.topbar-brand-card{flex:0 1 365px!important;max-width:365px!important}
+@media(max-width:700px){.topbar-brand-card{flex-basis:315px!important;max-width:315px!important}}
+@media(max-width:560px){.topbar-brand-card{flex-basis:285px!important;max-width:285px!important}.topbar-brand-community-link{width:40px;height:34px}.topbar-brand-community-badge{min-width:24px;height:24px;font-size:10px}}
+@media(max-width:390px){.topbar-brand-card{flex-basis:245px!important;max-width:245px!important}.topbar-brand-community-link{width:36px;height:32px}}
