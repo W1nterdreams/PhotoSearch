@@ -134,4 +134,40 @@ body,#app,.screen,.album-header,.comments-toolbar,.photo-viewer-description,.pho
 .legal-footer{color:#111111!important}
 /* keep text that sits directly over dark/green backgrounds white */
 .topbar,.topbar-title,.topbar-user,.topbar-button,.topbar-sort-button:not(.active),.primary-button,.album-name,.album-count,.photo-card-date,.photo-card-stat,.client-global-photo-date,.client-global-photo-album,.photo-viewer-nav{color:#ffffff!important}
-\n/* Mania Yarn brand block */\n.mania-brand{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;padding:12px 12px 10px;background:#f4f6f7!important}\n.mania-brand-logo-link{display:block;width:min(100%,520px);border-radius:13px;overflow:hidden;text-decoration:none;line-height:0;background:#fff;border:1px solid #e0e4e6;box-shadow:0 1px 3px rgba(0,0,0,.05);-webkit-tap-highlight-color:transparent}\n.mania-brand-logo-link:active{transform:scale(.995)}\n.mania-brand-logo{display:block;width:100%;height:auto;aspect-ratio:590/265;object-fit:cover;user-select:none;-webkit-user-drag:none}\n.mania-community-link{display:flex;align-items:center;justify-content:center;gap:6px;min-height:34px;max-width:100%;padding:6px 11px;border:1px solid #dce3e0;border-radius:18px;background:#fff;color:#303b37!important;font-size:13px;font-weight:600;line-height:1.15;text-decoration:none;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.03);-webkit-tap-highlight-color:transparent}\n.mania-community-link:hover{border-color:#18c895;background:#f9fffc;text-decoration:none}\n.mania-community-link:active{background:#edf9f4;transform:scale(.985)}\n.mania-community-dot{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:#2787f5;color:#fff!important;font-size:9px;font-weight:800;letter-spacing:-.2px}\n.mania-community-address{color:#16866a!important;font-weight:700}\n.mania-community-arrow{color:#16866a!important;font-size:15px}\n@media(max-width:480px){.mania-brand{padding:9px 9px 8px;gap:7px}.mania-brand-logo-link{border-radius:11px}.mania-community-link{width:auto;max-width:calc(100vw - 18px);padding:6px 10px;font-size:12px}.mania-community-address{display:none}}\n
+
+/* 2026-10-11: softer topbar + redesigned Mania brand block for mobile */
+.topbar{background:linear-gradient(135deg,#84a9a3 0%,#6e948e 48%,#5f837d 100%)!important;box-shadow:0 2px 10px rgba(54,82,77,.18)!important}
+.topbar-sort-button.active{background:#ffffff!important;color:#557b75!important;border-color:#ffffff!important}
+.search-box:focus-within{border-color:#7ea59f!important;box-shadow:0 0 0 3px rgba(126,165,159,.12)!important}
+.search-icon{color:#6f9790!important}
+
+.mania-brand{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:10px 10px 8px;background:#f3f5f4!important}
+.mania-brand-card,.mania-brand-card:visited{display:flex;align-items:center;gap:12px;width:100%;max-width:560px;margin:0 auto;padding:10px 12px;border:1px solid #dde4e1;border-radius:16px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfb 100%);box-shadow:0 1px 3px rgba(0,0,0,.04);text-decoration:none!important;color:#243230!important;-webkit-tap-highlight-color:transparent}
+.mania-brand-card:active{transform:scale(.995);background:#f8fbfa}
+.mania-brand-thumb-wrap{flex:0 0 auto;width:72px;height:72px;border-radius:14px;overflow:hidden;background:#eef3f1;border:1px solid #e0e6e3}
+.mania-brand-thumb{display:block;width:100%;height:100%;object-fit:cover}
+.mania-brand-copy{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.mania-brand-eyebrow{color:#7a8885;font-size:11px;font-weight:700;line-height:1.2;text-transform:uppercase;letter-spacing:.05em}
+.mania-brand-name{color:#22312f;font-size:21px;font-weight:800;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mania-brand-subtitle{color:#5f6d69;font-size:13px;font-weight:600;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mania-brand-open{flex:0 0 auto;align-self:center;padding:8px 10px;border-radius:999px;background:#edf4f2;color:#567b74;font-size:12px;font-weight:800;line-height:1}
+
+.mania-community-link,.mania-community-link:visited{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;max-width:560px;margin:0 auto;padding:9px 12px;border:1px solid #dde4e1;border-radius:14px;background:#ffffff;color:#495754!important;font-size:13px;font-weight:600;line-height:1.2;text-decoration:none!important;box-shadow:0 1px 2px rgba(0,0,0,.03);-webkit-tap-highlight-color:transparent}
+.mania-community-link:hover{background:#fbfcfb;border-color:#cfdad6;text-decoration:none!important}
+.mania-community-link:active{background:#f5f8f7;transform:scale(.995)}
+.mania-community-dot{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:#2787f5;color:#fff!important;font-size:9px;font-weight:800;letter-spacing:-.2px}
+.mania-community-label{color:#4a5653!important;font-weight:800}
+.mania-community-sep{color:#adb7b3!important}
+.mania-community-hint{color:#7a8784!important;font-weight:600}
+
+@media (max-width: 560px){
+  .mania-brand{padding:8px 8px 6px;gap:7px}
+  .mania-brand-card{padding:9px 10px;border-radius:14px;gap:10px}
+  .mania-brand-thumb-wrap{width:60px;height:60px;border-radius:12px}
+  .mania-brand-name{font-size:19px}
+  .mania-brand-subtitle{font-size:12px}
+  .mania-brand-open{display:none}
+  .mania-community-link{padding:8px 10px;font-size:12px;gap:5px;flex-wrap:wrap}
+  .mania-community-hint{display:none}
+  .mania-community-sep{display:none}
+}
